@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .header{
+    min-height: 100vh;
+     background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+     url(../images/burger.jpg)center/cover no-repeat fixed;
+    margin-top: auto; 
+  }
+  
+
+  .title-text{
+    font-family: Brush Script MT, Brush Script Std, cursive	;
+    font-size: 40px;
+    text-align: center;
+  }
+  body{
+    font-family: cursive;
+        line-height: 1.5;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .hero .title{
+    color: #fff;
+    font-size: 40px;
+  }
+  .hero-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color:#fff;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-top:10px;
+  
+  }
+  .hero-button:hover{
+    background: #fff;
+    color: orange;
+    border: none;
+    
+  
+  }
+  .pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count:infinite ;
+    opacity: .3;
+    color: black;
+  }
+  @-webkit-keyframes pulsate{
+    0% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
+  
+  }
+  .text-center hr{
+      color: red;
+  }
+  .text-center
+  {
+float: left;  }
+  #food{
+    padding: 20px ;
+  }
+  .food-container{
+     max-width: 80vw;
+    margin: 0 auto;
+  }
+  .food-card{
+    position: relative;
+    background: linear-gradient(rgba(white),rgba(white));
+    margin:20px 0;
+    color: #000;
+    overflow: hidden;
+    border-radius: 1px;
+    border: 1px solid rgb(255, 255, 254);
+    box-shadow: 2px 3px 1px 1px #faf9f8;
+padding-left: 20px;
+  }
+  
+  #food img{
+    width: 50%;
+    min-height: 50%;
+    display: block;
+    position:relative;
+    transition: transform 4s;
+  }
+  
+  .img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+  
+  }
+  .img-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    font-size: 20px;
+    opacity: 0;
+    color: #000;
+    transition: opacity 4s;
+  }
+  .img-text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .food-card:hover img{
+    opacity: 0.4;
+    transform: scale(1.3);
+  }
+  .food-card:hover .img-text,
+  .food-card:hover  .img-footer{
+    opacity:1;
+  }
+  .food-btn{
+    display: inline-block;
+    background:#000;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 12px 32px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 180px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out;
+    font-size:18px;
+    outline:none;
+  }
+  .food-btn:hover{
+    color: rgb(255, 0, 0);
+    background:white;
+    border: #000;
+    outline: none;
+  }
+  .fas{
+    font-size: 30px;
+  }
+  
+  .row
+  {
+display: flex;
+padding-left: 32px;
+  }
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 30px;
+    padding-right: 200px;
+  }
+  
+.panel-footer
+{
+    background-color: white;
+
+}
+header input
+{
+  padding: 6px 10px;
+
+}
+header button {
+  padding: 7px 10px;
+  margin-top: 8px;
+  background: rgb(250, 143, 3);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+header button:hover {
+  background: rgb(238, 132, 10);
+}
+
+  @media screen and (max-width: 425px){
+    .food-container{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-column-gap: 16px;
+    }
+    .header{
+        min-height: 100vh;
+         background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+         url(../images/min-bruger.jpg)center/cover no-repeat fixed;
+        margin-top: auto; 
+      }
+      .row {
+display:  block;
+      }
+      .food-container
+      {
+        display: block;
+      }
+      .food-container .img-text h1
+      {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+  }
+  @media screen and (min-width: 992px){
+    .food-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap:16px ;
+    }
+  }
+  

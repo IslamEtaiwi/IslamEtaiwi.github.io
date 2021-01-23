@@ -1,0 +1,26 @@
+header
+{        min-height: 100vh;
+    margin-top: auto; 
+
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+    url(images/h.jpg)center/cover no-repeat fixed;
+}
+.container img{
+float: left;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.container .form_input input
+{
+    margin-top: 200px;
+}
+.container input
+{    margin-left: 4px;
+color: black;
+box-shadow: 2px 3px 1px 1px rgb(255, 115, 0);
+
+    float: none;
+ padding: 8px;
+ border-radius: 4px;
+ margin-top: 7px;
+}
